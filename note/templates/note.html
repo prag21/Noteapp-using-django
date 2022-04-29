@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="main1">
+    <div>
+       <h1>Add a Note</h1>
+    </div>
+       <form action="note" method="POST">
+           {% csrf_token %}
+           <div class="f4"> <label>Title</label></div>
+           <div class="f5">
+              
+               <input type="text" name='title'>
+           </div>
+           <div class="f4"> <label>Status</label></div>
+           <div class="f5">
+           
+            <input type="text" name='status'>
+        </div>
+        <div class="f4"><label>Priority</label></div>
+        <div class="f5">
+            
+            <input type="text" name='priority'>
+        </div>
+        <div class="butt"><input type="submit"></div>
+       </form>
+       {% if error %}
+       <div class="alert">
+         {{error}}
+         </div>
+         {% endif %}
+    </div>
+<div class="main2">
+   <div>
+       <h1>Notes</h1>
+   </div>
+<div class="div1">
+    <table id="table1">
+        <tr>
+            <th class="title">Title</th>
+            <th class="status">Status</th>
+            <th class="priority">Priority</th>
+            <th class="date">Date</th>
+        </tr>
+    </table>
+  </div>
+  <div class="div2">
+    {% for c1 in c %}
+    <div class="one">
+        <table id="table1">
+            <tr>
+                <th class="title">{{c1.title}}</th>
+                <th class="status">{{c1.status}}</th>
+                <th class="priority">{{c1.priority}}</th>
+                <th class="date">{{c1.date}}</th>
+                
+            </tr>
+            
+
+  
+
+
+         
+      
+        
+        
+      </table>
+      </div>
+      <div class="two">
+<div class="two1">
+    
+    <form action="note" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Edit">
+        <input type hidden="text" name="id2" value="{{c1.id}}" >
+    </form>
+        
+</form>
+</div>
+       <div class="two2">
+        <form action="note" method="post">
+            {% csrf_token %}
+            <input type hidden="text" value="{{c1.id}}" name="id1">
+        <input type="submit" value="Delete">
+        </form>
+       </div>
+    </div>
+   
+  {% endfor %}
+    </div>
+    
+
+</div>
+{% endblock %}

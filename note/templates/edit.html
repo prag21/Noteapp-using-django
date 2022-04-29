@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<<div class="edit">
+    <div>
+       <h1>Edit Note</h1>
+    </div>
+       <form action="edit" method="POST">
+           {% csrf_token %}
+           <div class="f4"> <label>Title</label></div>
+           <div class="f5">
+              
+               <input type="text" name='title' value="{{n.title}}">
+           </div>
+           <div class="f4"> <label>Status</label></div>
+           <div class="f5">
+           
+            <input type="text" name='status' value="{{n.status}}">
+        </div>
+        <div class="f4"><label>Priority</label></div>
+        <div class="f5">
+            
+            <input type="text" name='priority' value="{{n.priority}}">
+        </div>
+        <input type hidden="text" name="id2" value={{n.id}}>
+        <div class="butt"><input type="submit" value="Update"></div>
+       </form>
+    </div>
+{% endblock %}

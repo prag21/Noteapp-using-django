@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="f">
+    <div class="f1">
+        <h1>Login</h1>
+      
+    </div>
+    <form action="login" method="POST">
+        {% csrf_token %}
+       
+        
+        <div class="f2">
+           <label>Email</label>
+           </div>
+           <div class="f3">
+        <input type="text" name='email'>
+       </div>
+       <div class="f2">
+           <label>Password</label>
+           </div>
+           <div class="f3">
+        <input type="text" name='password' >
+       </div>
+       <div class="but">
+           <input type="submit">
+       </div>
+       {% if error %}
+       <div class="alert">
+         {{error}}
+         </div>
+         {% endif %}
+    </form>
+   </div>
+
+{% endblock %}

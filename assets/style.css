@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding:0;
+}
+.navbar{
+  background-color: rgb(134, 102, 163);
+  color: whitesmoke;
+  height: 80px;
+  
+}
+.main{
+  height: 200px;
+  width: 400px;
+  background-color: rgba(132, 102, 163, 0.459);
+  color:black;
+  margin: 200px 200px 200px 600px;
+  text-align: center;
+}
+.main h1{
+  padding: 70px 20px 20px 20px;
+  font-size: 40px;
+}
+.h{
+  padding: 20px;
+
+  display: inline-block;
+}
+.u{
+  float: right;
+  
+}
+.u li{
+ display: inline-block;
+ padding: 30px;
+}
+.u li a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+}
+.f{
+ 
+  background-color: rgb(134, 102, 163);
+  height: 500px;
+  width: 500px;
+  margin-top: 100px;
+  margin-left: 40%;
+  margin-right: 50%;
+
+}
+.f1{
+  text-align: center;
+  color: whitesmoke;
+  padding: 20px;
+  text-decoration: underline;
+}
+.f2{
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.f3 input{
+ margin-top: 20px;
+ margin-bottom: 20px;
+  width: 90%;
+  margin-left: 10px;
+  margin-right: 20px;
+  line-height: 30px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid whitesmoke;
+  color: aliceblue;
+  outline: none;
+}
+.but{
+  text-align: center;
+}
+.but input{
+  text-align: center;
+  width: 100px;
+  height: 30px;
+}
+.main1{
+  background-color:rgba(133, 102, 163, 0.842);
+  height: 600px;
+  width: 600px;
+  margin: 20px;
+  float: left;
+}
+.main1 h1{
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 5px;
+}
+.f4{
+  margin-top: 30px;
+  text-align: center;
+}
+.f4 label{
+  color: whitesmoke;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+.f5 input{
+  width: 90%;
+  margin-left: 30px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid whitesmoke;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 40px;
+  background-color: transparent;
+}
+.butt{
+ 
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.butt input{
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  text-align: center;
+  
+}
+.main2{
+  background-color:rgba(133, 102, 163, 0.842);
+  height: 600px;
+  width: 800px;
+  margin: 20px;
+  float: right;
+}
+.main2 h1{
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 5px;
+  text-decoration: underline;
+  overflow-y: auto;
+  padding-bottom: 5px;
+}
+.class1{
+  height: 40px;
+  width: 800px;
+  
+}
+#table1{
+  height: 40px;
+  width: 650px;
+  
+
+
+}
+#table1 tr{
+  text-align: center;
+
+}
+#table1 .title{
+border: 3px solid black;
+width: 350px;
+color: whitesmoke;
+font-size: 18px;
+height: 40px;
+}
+#table1 .status{
+  border: 3px solid black;
+  width: 50px;
+  color: whitesmoke;
+font-size: 18px;
+height: 40px;
+}
+#table1 .priority{
+  border: 3px solid black;
+  width: 80px;
+  color: whitesmoke;
+font-size: 18px;
+height: 40px;
+}
+#table1 .date{
+  border: 3px solid black;
+  color: whitesmoke;
+  font-size: 18px;
+  height: 40px;
+ 
+
+}
+.div2{
+  height: 500px;
+  overflow: auto;
+  overflow-x: hidden;
+
+ 
+}
+.one{
+ 
+  height: 40px;
+  width: 600px;
+  float: left;
+}
+.two{
+
+ margin-top: 3px;
+  width: 150px;
+  height: 34px;
+  float: right;
+  
+}
+.two .two1{
+  float: left;
+
+  color: whitesmoke;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
+
+  text-align: center;
+}
+.two .two2{
+  float: right;
+  color: whitesmoke;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-right: 50px;
+
+  text-align: center;
+}
+.two .two1 input{
+  background-color:black;
+  color: whitesmoke;
+}
+.two .two2 input{
+  background-color:black;
+  color: whitesmoke;
+}
+.edit{
+  background-color:rgba(133, 102, 163, 0.842);
+  height: 600px;
+  width: 600px;
+  margin: auto;
+  margin-top: 40px;
+
+}
+.edit h1{
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 5px;
+  text-decoration: underline;
+  overflow-y: auto;
+  padding-bottom: 5px;
+}
+.edit form input{
+ color: whitesmoke;
+ 
+}
+.main1 form input{
+  color: whitesmoke;
+  
+ }

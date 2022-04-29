@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    
+    
+    <title>My First Design</title>
+</head>
+<body>
+<div class="navbar">
+    <div class=h>
+   <h1>Note App</h1>
+    </div>
+    <ul class="u">
+        {% if request.session.id %}
+        <li><a href="note">Note</a></li>
+        <li><a href="logout">Logout</a></li>
+        {% else %}
+        <li><a href="login">Login</a></li>
+        <li><a href="sign">Signup</a></li>
+        {% endif %}
+    </ul>
+
+</div>
+{% block content %} {%  endblock %}
+</body>
+</html>
